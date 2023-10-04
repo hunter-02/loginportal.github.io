@@ -1,0 +1,193 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  display: flex;
+  padding-left: 49%;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+  /* Add this line to make the ::before pseudo-element relative to .main */
+}
+
+.main::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /* background-image: url("../livebook.github.io/shelby.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  opacity: 0.6 #07070779; */
+  /* Adjust the opacity as needed */
+  /* filter: blur(5px); */
+  /* Adjust the blur value as needed */
+  /* z-index: -1; */
+  /* Ensure the pseudo-element is behind the content of .main */
+}
+
+.logo {
+  color: #183D3D;
+  font-size: 35px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  text-align: left;
+  padding-top: 10px;
+}
+.h1{
+  text-decoration-line: line-through;
+  padding-left: 20%;
+}
+
+.enter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #93B1A6;
+  padding: 50px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 7px rgba(31, 30, 30, 0.7);
+}
+
+label {
+  font-weight: inherit;
+  color: #040D12;
+  margin-bottom: 10px;
+}
+
+input[type="login-id"],
+input[type="password"] {
+  width: 250px;
+  padding: 10px;
+  background-color: #fbf9f989;
+  border: 1px solid #183D3D;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.trap {
+  position: absolute;
+  right: 25%;
+  bottom: 25%;
+  min-width: 125px;
+  background: #c8c217;
+  color: white;
+  border-radius: 5px;
+  padding: 0.4rem e.5rem;
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: lpx;
+  text-transform: uppercase;
+}
+
+/* @keyframes shaka {
+  0% {
+    transform: scale(2.5) translateY(O%) rotate(-20deg);
+  }
+
+  100% {
+    transform: scale(2.5) translateY(0%) rotate(20deg);
+  }
+} */
+
+button[type="submit"] {
+  text-transform: unset;
+  padding: 10px 20px;
+  background-color: #183D3D;
+  color: #fff;
+  border: none;
+  box-sizing: unset;
+  box-shadow: 5px 5px 7px rgba(31, 31, 30, 0.7);
+  border-radius: 65px;
+  cursor: pointer;
+}
+
+/* Responsive Adjustments */
+
+/* @media only screen and (max-width: 768px) {
+  .main {
+    padding-left: 10px;
+  }
+
+  .enter {
+    width: 80%;
+  }
+
+  input[type="login-id"],
+  input[type="password"] {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .logo {
+    font-size: 25px;
+  }
+
+  .enter {
+    padding: 10px;
+  }
+
+  button[type="submit"] {
+    font-size: 14px;
+  }
+} */
+
+/* ... Your previous CSS code ... */
+
+/* Responsive Adjustments */
+
+@media only screen and (max-width: 1024px) {
+  .main {
+    padding-left: 20px;
+  }
+
+  .enter {
+    width: 90%;
+  }
+
+  input[type="login-id"],
+  input[type="password"] {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .main {
+    padding-left: 10px;
+  }
+
+  .enter {
+    width: 80%;
+  }
+
+  input[type="login-id"],
+  input[type="password"] {
+    width: 100%;
+  }
+
+  .logo {
+    font-size: 25px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .logo {
+    font-size: 20px;
+  }
+
+  .enter {
+    padding: 10px;
+  }
+
+  button[type="submit"] {
+    font-size: 14px;
+  }
+}
